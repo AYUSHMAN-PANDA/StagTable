@@ -83,12 +83,6 @@ function StagTable() {
                                     {user.email}
                                 </TableCell>
                                 <TableCell align="center">
-                                    {/* <Chip
-                                        label={user.status}
-                                        variant="outlined"
-                                        color="secondary"
-                                    /> */}
-                                    {/* <BasicModal status={user.status} username={user.name} /> */}
                                     <MaxWidthDialog status={user.status} username={user.name} id={user._id} />
                                 </TableCell>
                             </StyledTableRow>
