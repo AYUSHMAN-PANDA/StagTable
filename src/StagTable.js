@@ -6,7 +6,7 @@ import { makeStyles } from '@mui/styles';
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
-import BasicModal from './popup';
+// import BasicModal from './popup';
 import MaxWidthDialog from './statusDialog';
 
 const useStyles = makeStyles({
@@ -48,11 +48,11 @@ function StagTable() {
         axios
             .get("https://api.stag-os.org/maintainers/all")
             .then((res) => {
-                console.log(res.data.data);
+                // console.log(res.data.data);
                 setUsers(res.data.data);
             })
             .catch((err) => {
-                console.log(err);
+                // console.log(err);
             });
     }, [loadUsers]);
 
